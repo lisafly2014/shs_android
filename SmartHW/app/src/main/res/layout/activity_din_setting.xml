@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingEnd="2dp"
+    android:paddingStart="2dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".setting.DinSettingActivity">
+
+    <LinearLayout
+        android:id="@+id/din_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/din_text_pin"
+                style="@style/pinConfigureHead.dinBottomDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/din_number" />
+
+            <Spinner
+                android:id="@+id/din_spinner_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="35dp">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/din_text_enabled"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pin_enabled"/>
+
+            <Switch
+                android:id="@+id/din_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"
+                android:switchMinWidth="50sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dout_text_pull"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pin_pull"
+                android:layout_marginStart="18dp"/>
+
+            <Spinner
+                android:id="@+id/din_spinner_pull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp"
+                android:dropDownWidth="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/din_bt_save"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/din_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:onClick="clickSaveInputPinButton"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/din_text_lock_database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/din_bt_save"
+        android:layout_below="@+id/din_bt_save"
+        android:text="@string/lock_database_after_save"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/din_lock_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/din_bt_save"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@+id/din_text_lock_database"
+        android:src="@drawable/ticked"
+        android:onClick="clickLockAndSaveInputPinButton" />
+
+</RelativeLayout>

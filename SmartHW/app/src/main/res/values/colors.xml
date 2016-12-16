@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009CDE</color>
+    <color name="colorPrimaryDark">#0081B7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="headerTextColor">#FFFFFF</color>
+    <color name="actionBarMenuTextColor">#FFFFFF</color>
+    <color name="colorGrey">#A8A8A8</color>
+    <color name ="colorWhite">#FFFFFF</color>
+    <color name ="barProgress">#ff0600</color>
+</resources>

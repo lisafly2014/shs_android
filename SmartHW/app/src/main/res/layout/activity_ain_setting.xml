@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingStart="2dp"
+    android:paddingEnd="2dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".setting.AinSettingActivity">
+
+    <LinearLayout
+        android:id="@+id/ani_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="130dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:id="@+id/ani_text_pin"
+                style="@style/pinConfigureHead.aniBottomDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani_number"
+                android:layout_marginStart="7dp"/>
+
+            <Spinner
+                android:id="@+id/ani_spinner_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="30dp"
+                android:layout_marginTop="10dp">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/ani_text_enabled"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pin_enabled" />
+
+            <Switch
+                android:id="@+id/ani_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="50sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:id="@+id/ani_text_range"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani_range"
+                android:layout_marginStart="6dp"/>
+
+            <Spinner
+                android:id="@+id/ani_spinner_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="10dp">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/ani_text_rate"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani_rate"
+                android:layout_marginStart="14dp"/>
+
+            <Spinner
+                android:id="@+id/ani_spinner_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="wrap_content"
+                android:layout_marginTop="10dp">
+            </Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ani_bt_save"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/ani_linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:background="@color/colorGrey"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:onClick="clickSaveAnalogPinButton"/>
+
+    <TextView
+        android:id="@+id/ani_text_lock_database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ani_bt_save"
+        android:layout_below="@+id/ani_bt_save"
+        android:text="@string/lock_database_after_save"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ani_lock_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ani_bt_save"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@+id/ani_text_lock_database"
+        android:src="@drawable/ticked"
+        android:onClick="clickLockAndSaveAnalogPinButton"/>
+
+</RelativeLayout>

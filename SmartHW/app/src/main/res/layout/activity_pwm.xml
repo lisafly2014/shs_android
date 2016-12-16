@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.PwmActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-20dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/PWM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="49dp"
+                android:text="@string/pwm0" />
+
+            <TextView
+                style="@style/PWM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="49dp"
+                android:text="@string/pwm1" />
+
+            <TextView
+                style="@style/PWM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="49dp"
+                android:text="@string/pwm2" />
+
+            <TextView
+                style="@style/PWM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="49dp"
+                android:text="@string/pwm3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/pwm0_seekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:max="100"
+                android:thumb="@drawable/thumb_image"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/pwm0_dutyCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginBottom="18dp"/>
+
+            <SeekBar
+                android:id="@+id/pwm1_seekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:max="100"
+                android:thumb="@drawable/thumb_image"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/pwm1_dutyCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginBottom="20dp"/>
+
+            <SeekBar
+                android:id="@+id/pwm2_seekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:max="100"
+                android:thumb="@drawable/thumb_image"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/pwm2_dutyCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginBottom="20dp"/>
+
+            <SeekBar
+                android:id="@+id/pwm3_seekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:max="100"
+                android:thumb="@drawable/thumb_image"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/pwm3_dutyCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

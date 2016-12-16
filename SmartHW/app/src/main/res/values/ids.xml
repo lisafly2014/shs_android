@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="din0"/>
+    <item type="id" name="din1"/>
+    <item type="id" name="din2"/>
+    <item type="id" name="din3"/>
+    <item type="id" name="din4"/>
+    <item type="id" name="din5"/>
+    <item type="id" name="din6"/>
+    <item type="id" name="din7"/>
+    <item type="id" name="din8"/>
+    <item type="id" name="din9"/>
+    <item type="id" name="din10"/>
+    <item type="id" name="din11"/>
+    <item type="id" name="din12"/>
+    <item type="id" name="din13"/>
+    <item type="id" name="din14"/>
+    <item type="id" name="din15"/>
+    <item type="id" name="din16"/>
+    <item type="id" name="din17"/>
+    <item type="id" name="din18"/>
+    <item type="id" name="din19"/>
+    <item type="id" name="din20"/>
+    <item type="id" name="din21"/>
+    <item type="id" name="din22"/>
+    <item type="id" name="din23"/>
+    <item type="id" name="din24"/>
+    <item type="id" name="din25"/>
+    <item type="id" name="din26"/>
+    <item type="id" name="din27"/>
+    <item type="id" name="din28"/>
+    <item type="id" name="din29"/>
+    <item type="id" name="din30"/>
+    <item type="id" name="din31"/>
+
+    <item type="id" name="dout0"/>
+    <item type="id" name ="dout1"/>
+    <item type="id" name ="dout2"/>
+    <item type="id" name ="dout3"/>
+    <item type="id" name ="dout4"/>
+    <item type="id" name ="dout5"/>
+    <item type="id" name ="dout6"/>
+    <item type="id" name ="dout7"/>
+    <item type="id" name ="dout8"/>
+    <item type="id" name ="dout9"/>
+    <item type="id" name ="dout10"/>
+    <item type="id" name ="dout11"/>
+    <item type="id" name ="dout12"/>
+    <item type="id" name ="dout13"/>
+    <item type="id" name ="dout14"/>
+    <item type="id" name ="dout15"/>
+    <item type="id" name ="dout16"/>
+    <item type="id" name ="dout17"/>
+    <item type="id" name ="dout18"/>
+    <item type="id" name ="dout19"/>
+    <item type="id" name ="dout20"/>
+    <item type="id" name ="dout21"/>
+    <item type="id" name ="dout22"/>
+    <item type="id" name ="dout23"/>
+    <item type="id" name ="dout24"/>
+    <item type="id" name ="dout25"/>
+    <item type="id" name ="dout26"/>
+    <item type="id" name ="dout27"/>
+    <item type="id" name ="dout28"/>
+    <item type="id" name ="dout29"/>
+    <item type="id" name ="dout30"/>
+    <item type="id" name ="dout31"/>
+</resources>

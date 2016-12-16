@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingStart="25dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.AinActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="-20dp">
+
+            <TextView
+                android:id="@+id/ain1"
+                style="@style/AIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani1"
+                android:layout_marginBottom="49dp"/>
+
+            <TextView
+                android:id="@+id/ain2"
+                style="@style/AIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani2"
+                android:layout_marginBottom="49dp"/>
+
+            <TextView
+                android:id="@+id/ain3"
+                style="@style/AIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani3"
+                android:layout_marginBottom="49dp"/>
+
+            <TextView
+                android:id="@+id/ain4"
+                style="@style/AIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani4"
+                android:layout_marginBottom="49dp"/>
+
+            <TextView
+                android:id="@+id/ain5"
+                style="@style/AIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani5"
+                android:layout_marginBottom="49dp"/>
+
+            <TextView
+                android:id="@+id/ain6"
+                style="@style/AIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ani6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/ain_progressBar1"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"
+                android:max="1023"
+                android:visibility="visible"
+                android:background="@color/colorGrey"
+                android:progressTint="@color/barProgress"/>
+
+            <TextView
+                android:id="@+id/ain1_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="90dp"/>
+
+            <ProgressBar
+                android:id="@+id/ain_progressBar2"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:max="1023"
+                android:visibility="visible"
+                android:background="@color/colorGrey"
+                android:progressTint="@color/barProgress"/>
+
+            <TextView
+                android:id="@+id/ain2_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginStart="90dp"/>
+
+            <ProgressBar
+                android:id="@+id/ain_progressBar3"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:max="1023"
+                android:visibility="visible"
+                android:background="@color/colorGrey"
+                android:progressTint="@color/barProgress"/>
+
+            <TextView
+                android:id="@+id/ain3_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginStart="90dp"/>
+
+            <ProgressBar
+                android:id="@+id/ain_progressBar4"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:max="1023"
+                android:visibility="visible"
+                android:background="@color/colorGrey"
+                android:progressTint="@color/barProgress"/>
+
+            <TextView
+                android:id="@+id/ain4_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="31dp"
+                android:layout_marginStart="90dp"/>
+
+            <ProgressBar
+                android:id="@+id/ain_progressBar5"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:max="1023"
+                android:visibility="visible"
+                android:background="@color/colorGrey"
+                android:progressTint="@color/barProgress"/>
+
+            <TextView
+                android:id="@+id/ain5_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="90dp"/>
+
+            <ProgressBar
+                android:id="@+id/ain_progressBar6"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:max="1023"
+                android:visibility="visible"
+                android:background="@color/colorGrey"
+                android:progressTint="@color/barProgress"/>
+
+            <TextView
+                android:id="@+id/ain6_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

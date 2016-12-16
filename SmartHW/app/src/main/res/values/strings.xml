@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">SHSApplication</string>
+    <string name="find_hardware">Find Hardware</string>
+    <string name="hardware_connecting">Get configuration,waiting..."</string>
+    <string name="show_interface">Show Interface</string>
+    <string name="select_interface">Select Interface</string>
+    <string name="disconnect_hardware">Disconnect Hardware</string>
+    <string name="shs_disconnected">Pheripheral Disconnected.</string>
+    <string name="shs_time_out">Getting device configuration timeout</string>
+    <string name="shs">SHS</string>
+
+    <string name="scanner_empty">No device found</string>
+    <string name="scanner_subtitle_not_bonded">AVAILABLE DEVICES:</string>
+    <string name="scanner_subtitle_bonded">BONDED DEVICES:</string>
+    <string name="not_available">n/a</string>
+
+    <string name="scanner_action_scan">Scan</string>
+    <string name="scanner_title">Select device:</string>
+    <string name="no_required_permission">Permission denied.</string>
+    <string name="scanner_action_cancel">Cancel</string>
+    <string name="scanner_permission_rationale">Since Android 6.0 Marshmallow system requires granting access to device\'s location in order to scan for Bluetooth Smart devices. Bluetooth beacons may be used to determine the phone\'s and user\'s location.</string>
+    <string name="no_ble">Device doesn\'t have BLE support!</string>
+    <string name="shs_unknown_name">unnamed device</string>
+    <string name="title_activity_analog_input_pin">AnalogInputPinActivity</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="pin0_text"> 0 </string>
+    <string name="pin1_text"> 1 </string>
+    <string name="pin2_text"> 2 </string>
+    <string name="pin3_text"> 3 </string>
+    <string name="pin4_text"> 4 </string>
+    <string name="pin5_text"> 5 </string>
+    <string name="pin6_text"> 6 </string>
+    <string name="pin7_text"> 7 </string>
+    <string name="pin8_text"> 8 </string>
+    <string name="pin9_text"> 9 </string>
+    <string name="pin10_text"> 10 </string>
+    <string name="pin11_text"> 11 </string>
+    <string name="pin12_text"> 12 </string>
+    <string name="pin13_text"> 13 </string>
+    <string name="pin14_text"> 14 </string>
+    <string name="pin15_text"> 15 </string>
+    <string name="pin16_text"> 16 </string>
+    <string name="pin17_text"> 17 </string>
+    <string name="pin18_text"> 18 </string>
+    <string name="pin19_text"> 19 </string>
+    <string name="pin20_text"> 20 </string>
+    <string name="pin21_text"> 21 </string>
+    <string name="pin22_text"> 22 </string>
+    <string name="pin23_text"> 23 </string>
+    <string name="pin24_text"> 24 </string>
+    <string name="pin25_text"> 25 </string>
+    <string name="pin26_text"> 26 </string>
+    <string name="pin27_text"> 27 </string>
+    <string name="pin28_text"> 28 </string>
+    <string name="pin29_text"> 29 </string>
+    <string name="pin30_text"> 30 </string>
+    <string name="pin31_text"> 31 </string>
+
+    <string name="title_activity_digital_output_pin">DigitalOutputPinActivity</string>
+    <string name="title_activity_digital_input_pin">DigitalInputPinActivity</string>
+    <string name="title_activity_interface_type">InterfaceTypeActivity</string>
+    <string name ="title_activity_pwm">PWM</string>
+    <string name ="title_activity_servo">SERVO</string>
+
+    <string name="dout_number">DOut</string>
+    <string name="pin_enabled">Enabled</string>
+    <string name="pin_pull">Pull</string>
+    <string name="dout_drive">Drive</string>
+    <string name="dout_default">Default</string>
+    <string name="save">Save</string>
+    <string name="lock_database_after_save">Lock Database After Save</string>
+
+    <string name="title_activity_digital_input_pin_setting">Input Pin Setting</string>
+    <string name="title_activity_digital_output_pin_setting">Output Pin Setting</string>
+    <string name="title_activity_analog_input_pin_setting">Analog Input Pin Setting</string>
+    <string name ="title_activity_pwm_setting">Pwm Setting</string>
+    <string name ="title_activity_servo_setting">Servo Setting</string>
+
+    <string name="din_number">DIN</string>
+    <string name="ani_number">ANI</string>
+    <string name="ani_range">Range</string>
+    <string name="ani_rate">Rate</string>
+    <string name="ani1">ANI1</string>
+    <string name="ani2">ANI2</string>
+    <string name="ani3">ANI3</string>
+    <string name="ani4">ANI4</string>
+    <string name="ani5">ANI5</string>
+    <string name="ani6">ANI6</string>
+    <string name="config_unchanged">Configuration has not changed.</string>
+    <string name="none_configured">Not configured</string>
+    <string name="config_error_title">Configuration Error</string>
+    <string name="remote_exception_disconnect">Remote Exceptional Disconnect</string>
+    <string name="ok">OK</string>
+
+    <string name ="pwm0">PWM0</string>
+    <string name ="pwm1">PWM1</string>
+    <string name ="pwm2">PWM2</string>
+    <string name ="pwm3">PWM3</string>
+    <string name ="pwm">PWM</string>
+    <string name ="pwm_enabled">Enable</string>
+    <string name ="pwm_pin">Pin</string>
+    <string name ="pwm_drive">Drive</string>
+    <string name ="duty_cycle">DutyCycle</string>
+
+    <string name ="pwm0_index">0</string>
+    <string name ="pwm1_index">1</string>
+    <string name ="pwm2_index">2</string>
+    <string name ="pwm3_index">3</string>
+
+    <string name ="servo">Servo</string>
+    <string name ="servo0">Servo0</string>
+    <string name ="servo1">Servo1</string>
+    <string name ="servo2">Servo2</string>
+    <string name="servo3">Servo3</string>
+    <string name ="servo_enabled">Enable</string>
+    <string name ="servo_drive">Drive</string>
+    <string name ="servo_pin">Pin</string>
+    <string name="percentage">Percentage</string>
+
+    <string name ="servo0_index">0</string>
+    <string name ="servo1_index">1</string>
+    <string name ="servo2_index">2</string>
+    <string name ="servo3_index">3</string>
+
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.madsglobal.android.smarthw.setting.ServoSettingActivity">
+
+    <LinearLayout
+        android:id="@+id/servo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/servoConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/servo" />
+
+            <Spinner
+                android:id="@+id/servo_setting_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="35dp">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/servoConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/servo_enabled"/>
+
+            <Switch
+                android:id="@+id/servo_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:switchMinWidth="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/servoConfigureHead"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/servo_pin" />
+
+            <Spinner
+                android:id="@+id/servo_setting_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="35dp">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/servoConfigureHead"
+                android:layout_marginStart="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/servo_drive" />
+
+            <Spinner
+                android:id="@+id/servo_setting_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:dropDownWidth="50dp">
+            </Spinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/servo_setting_percentage"
+        android:layout_below="@+id/servo_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percentage"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginStart="18dp"/>
+
+    <SeekBar
+        android:id="@+id/servo_setting_percentage_seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servo_setting_percentage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:max="100"
+        android:visibility="visible"
+        android:thumb="@drawable/thumb_image"/>
+
+    <TextView
+        android:id="@+id/servo_percentage_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servo_setting_percentage_seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="90dp"/>
+
+    <Button
+        android:id="@+id/servo_bt_save"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/servo_percentage_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:onClick="clickSaveServoButton"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/servo_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/servo_bt_save"
+        android:layout_below="@+id/servo_bt_save"
+        android:text="@string/lock_database_after_save"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/servo_lock_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servo_bt_save"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@+id/servo_lock"
+        android:src="@drawable/ticked"
+        android:onClick="clickLockAndSaveServoButton" />
+</RelativeLayout>
+

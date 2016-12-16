@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.madsglobal.android.smarthw"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ShsActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.InterfaceTypeActivity"
+            android:label="@string/title_activity_interface_type"
+            android:parentActivityName=".ShsActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShsActivity"/>
+        </activity>
+        <activity
+            android:name=".view.DinActivity"
+            android:label="@string/title_activity_digital_input_pin"
+            android:parentActivityName=".view.InterfaceTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".view.DoutActivity"
+            android:label="@string/title_activity_digital_output_pin"
+            android:parentActivityName=".view.InterfaceTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".view.AinActivity"
+            android:label="@string/title_activity_analog_input_pin"
+            android:parentActivityName=".view.InterfaceTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".setting.DinSettingActivity"
+            android:label="@string/title_activity_digital_input_pin_setting"
+            android:parentActivityName=".view.DinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".setting.DoutSettingActivity"
+            android:label="@string/title_activity_digital_output_pin_setting"
+            android:parentActivityName=".view.DoutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".setting.AinSettingActivity"
+            android:label="@string/title_activity_analog_input_pin_setting"
+            android:parentActivityName=".view.AinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".ShsService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity android:name=".view.PwmActivity"
+            android:label="@string/title_activity_pwm"
+            android:parentActivityName=".view.InterfaceTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".setting.PwmSettingActivity"
+            android:label="@string/title_activity_pwm_setting"
+            android:parentActivityName=".view.PwmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".view.ServoActivity"
+            android:label="@string/title_activity_servo"
+            android:parentActivityName=".view.InterfaceTypeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".setting.ServoSettingActivity"
+            android:label="@string/title_activity_servo_setting"
+            android:parentActivityName=".view.ServoActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

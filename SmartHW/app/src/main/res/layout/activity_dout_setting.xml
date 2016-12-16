@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingEnd="2dp"
+    android:paddingStart="2dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".setting.DoutSettingActivity">
+
+    <LinearLayout
+        android:id="@+id/dout_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dout_text_pin"
+                style="@style/pinConfigureHead.pinBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dout_number" />
+
+            <Spinner
+                android:id="@+id/dout_spinner_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:dropDownWidth="35dp">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dout_text_enabled"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pin_enabled" />
+
+            <Switch
+                android:id="@+id/dout_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="9dp"
+                android:switchMinWidth="50sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dout_text_pull"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:text="@string/pin_pull" />
+
+            <Spinner
+                android:id="@+id/dout_spinner_pull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:dropDownWidth="wrap_content">
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dout_text_drive"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/dout_drive" />
+
+            <Spinner
+                android:id="@+id/dout_spinner_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="10dp">
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dout_text_default"
+                style="@style/pinConfigureHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dout_default" />
+
+            <Spinner
+                android:id="@+id/dout_spinner_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:dropDownWidth="36dp">
+            </Spinner>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dout_bt_save"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_below="@+id/dout_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGrey"
+        android:gravity="center"
+        android:onClick="clickSaveOutputPinButton"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/dout_text_lock_database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dout_bt_save"
+        android:layout_below="@+id/dout_bt_save"
+        android:text="@string/lock_database_after_save"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/dout_lock_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dout_bt_save"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_toStartOf="@+id/dout_text_lock_database"
+        android:onClick="clickLockAndSaveOutputPinButton"
+        android:src="@drawable/ticked" />
+
+</RelativeLayout>
